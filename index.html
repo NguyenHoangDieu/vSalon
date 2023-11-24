@@ -24,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 container" style="justify-content: center;">
                   <li class="nav-item">
                     <a class="nave-menu nav-link active" aria-current="page" href="#">Trang chủ</a>
                   </li>
@@ -46,8 +46,8 @@
                         <img class="flag_VN" src="assets/images/flag_VN.jpg" alt="no images"> VN
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">VN</a></li>
-                      <li><a class="dropdown-item" href="#">EN</a></li>
+                      <li><a class="dropdown-item" href="#"><img class="flag_VN" src="assets/images/flag_VN.jpg" alt="no images"> VN</a></li>
+                      <li><a class="dropdown-item" href="#"><img class="flag_VN" src="assets/images/flag_VN.jpg" alt="no images"> EN</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -376,7 +376,7 @@
                   <p><i class="fa-solid fa-check"></i> Không phí khởi tạo</p>
                   <P><br></P>
                 </div>
-                <hr class="hr hr-blurry" />
+                <hr class="dotted" style="border-top: 2px dotted #bbb;">
                 <div class="container" style="justify-content: center;display: flex;">
                   <button class="btn btn-try-now">Dùng thử ngay</button>
                 </div>
@@ -404,7 +404,7 @@
                   <p><i class="fa-solid fa-check"></i> Không giới hạn tính năng</p>
                   <p><i class="fa-solid fa-check"></i> Không phí khởi tạo</p>
                 </div>
-                <hr class="hr hr-blurry" />
+                <hr class="dotted" style="border-top: 2px dotted #bbb;">
                 <div class="container" style="justify-content: center;display: flex;">
                   <button class="btn btn-try-now">Dùng thử ngay</button>
                 </div>
@@ -426,30 +426,198 @@
     <section id="app-download">
       <div class="container-fluid">
         <div class="container">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center" style="align-items: center;">
             <div class="col-md-6">
-              <div class="text-intro">Giải pháp điện toán đám mây 
-                <span style="color: #3BB54A;">quản lý Salon</span> hiệu quả nhất</div>
-                <hr class="hr hr-blurry" />
+              <div class="text-intro">Ứng dụng quản lý salon miễn phí <br>
+                <span style="color: #3BB54A;">trên điện thoại</span></div>
+                <hr class="hr hr-blurry" style="color: #3BB54A;width: 3.5rem;height: 0.2rem;opacity: 1 !important"/>
                 <p>Quản lý thuận tiện, cập nhật kịp thời với ứng dụng dành cho mobile và tablet</p>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/appstore.jpg" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <img src="assets/images/google_play.jpg" alt="">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="assets/images/appstore.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                      <img src="assets/images/google_play.jpg" alt="">
+                    </div>
                   </div>
                 </div>
             </div>
             <div class="col-md-6">
-              <img class="image-iphone" src="assets/images/iphone.png" alt="">
+              <div class="container">
+                <img class="image-iphone" src="assets/images/iphone.png" alt="">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="feedback">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="text-feedback">Lắng nghe cảm nhận của khách hàng về <span style="color: #3BB54A;">vSalon</span></div>
+          <div class="text-small-feedback">Sự hài lòng của khách hàng chính là thành công lớn nhất của chúng tôi</div>
+          <div class="swiper myFeedbacks animate__animated animate__pulse">
+            <div class="swiper-wrapper h-auto">
+                <div class="swiper-slide mb-5 h-auto">
+                    <div class="card h-100">
+                        <div id="avatar-hue" class="avatar container"></div>
+                        <div class="card-body text-center">
+                            <p>CHỊ HUẾ</p>
+                            <p>Marketing Ritta Hair Salon</p>
+                            <hr class="dotted" style="border-top: 2px dotted #3BB54A;">
+                            <div class="container">
+                              <i class="fa-solid fa-quote-left"></i>
+                            </div>
+                            <p class="card-text">
+                              Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách hàng, 
+                              nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, 
+                              nhưng thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide mb-5 h-auto">
+                  <div class="card h-100">
+                    <div id="avatar-helen" class="avatar container"></div>
+                    <div class="card-body text-center">
+                        <p>BÀ HELEN TRẦN</p>
+                        <p>Giám đốc Eden Beauty</p>
+                        <hr class="dotted" style="border-top: 2px dotted #3BB54A;">
+                        <div class="container">
+                          <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="card-text">
+                          Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách hàng, 
+                          nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, 
+                          nhưng thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide mb-5 h-auto">
+                  <div class="card h-100">
+                    <div id="avatar-anh" class="avatar container"></div>
+                    <div class="card-body text-center">
+                        <p>ANH NGỌC ANH</p>
+                        <p>Giám đốc chuỗi Spa Lagertroemia</p>
+                        <hr class="dotted" style="border-top: 2px dotted #3BB54A;">
+                        <div class="container">
+                          <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="card-text">
+                          Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách hàng, 
+                          nhất là các dịp lễ trong năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, 
+                          nhưng thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách hàng.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="customer">
+      <div class="count-customer container-fluid">
+        <img src="/assets/images/background_customer.jpg" alt="">
+      </div>
+      <div class="register-trial container">
+        <div class="text-customer">Hơn <span style="color: goldenrod;">5000</span> doanh nghiệp, chủ shop đang quản lý cửa hàng thế nào?</div>
+        <div class="text-small-feedback">Đăng ký dùng thử miễn phí 30 ngày để khám phá</div>
+          <form class="container-fluid" style="width: 50%;">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"></i></span>
+              <input type="text" class="form-control" placeholder="Nhập mail hoặc số điện thoại của bạn" aria-label="Register" aria-describedby="basic-addon1">
+              <button class="btn btn-trial" type="submit">Đăng ký ngay!</button>
+            </div>
+          </form>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container-fluid">
+        <div class="container">
+          <img src="/assets/images/logo_nocolor.jpg" alt="">
+          <div class="row">
+            <div class="col-md-4">
+              <p>Giới thiệu</p>
+              <hr style="color: #3BB54A;width: 3.5rem;height: 0.2rem;opacity: 1 !important;">
+              <p>e-Spa là hệ thống phần mềm quản lý spa, salon… hoàn toàn đáp ứng nhu cầu quản trị
+                 và chăm sóc khách hàng của các spa, salon tóc, thẩm mỹ viện...
+              </p>
+              <div class="container-fluid" style="display: flex;">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p>Liên kết</p>
+              <hr style="color: #3BB54A;width: 3.5rem;height: 0.2rem;opacity: 1 !important;">
+              <p>Điều khoản bảo mật</p>
+              <p>Chính sách bảo hành</p>
+              <p>Hình thức thanh toán</p>
+            </div>
+            <div class="col-md-4">
+              <p>Liên hệ</p>
+              <hr style="color: #3BB54A;width: 3.5rem;height: 0.2rem;opacity: 1 !important;">
+              <p>Công ty TNHH Orenda</p>
+              <p>GPKD: 0108149044 - cấp ngày 29/01/2018</p>
+              <p><i class="fa-solid fa-location-dot"></i>&nbsp&nbsp Tầng 4, Số 84 Tô Vĩnh Diện, Phường Khương Trung, Quận Thanh Xuân, TP Hà Nội</p>
+              <p><i class="fa-solid fa-phone"></i>&nbsp&nbsp 0865.500.968</p>
+              <p><i class="fa-solid fa-envelope"></i>&nbsp&nbsp Support@vSalon.vn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="padding-top: 10px;">
+        <p class="text-copyright">Copyright © 2021 <span style="color: #3BB54A;">vSalon</span> . All rights reserved.</p>
+      </div>
+    </section>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+       var myFeedbacks = new Swiper(".myFeedbacks", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        setWrapperSize: true,
+        roundLengths: true,
+        autoHeight: false,
+        autoplay: {
+          delay: 2000
+        },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+        breakpoints: {
+            0:{
+                slidesPerView:1,
+            },
+            
+            768: {
+                slidesPerView: 2,
+            },
+
+            1200: {
+                slidesPerView: 3,
+            },
+          
+        },
+    });  
+    </script>
 </body>
 </html>
