@@ -11,53 +11,7 @@
 
 
     //swiper slider
-    var myClients = new Swiper(".myClients", {
-        initialSlide: 1,
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
-        setWrapperSize: true,
-        roundLengths: true,
-        autoHeight: false,
-        autoplay: false,
-        loop: false,
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2.5,
-            slideShadows : false,
-        },
-        breakpoints: {
-            0:{
-                slidesPerView:1,
-            },
-            
-            768: {
-                slidesPerView: 2,
-            },
-
-            1200: {
-                slidesPerView: 3,
-            },
-          
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-                }
-    });
-
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     //tab information
     var firstTabEl = document.querySelector('#myTab li:last-child a')
