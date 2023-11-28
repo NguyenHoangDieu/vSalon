@@ -25,6 +25,9 @@
 }
 
 @media screen and (max-width:1024px){
+    .d-hide{
+        display: none !important;
+    }
     .swiper-button-prev.slider-arrow{
         display: none;
     }
@@ -37,6 +40,7 @@
     }
 }
 @media screen and (min-width: 1025px){
+    
     #app-download > div > div > div > div:nth-child(1){
         width: 45% !important;
     }
@@ -73,12 +77,12 @@
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    #app-download > div > div > div > div:nth-child(1) > div.container-fluid > div > div > img{
-        width: auto !important;
-        height: auto !important;
-    }
+    // #app-download > div > div > div > div:nth-child(1) > div.container-fluid > div > div > img{
+    //     width: auto !important;
+    //     height: auto !important;
+    // }
     #app-download > div > div > div > div:nth-child(1) > div.container-fluid > div > div{
-        width: auto !important;
+        width: 50% !important;
     }
     #tab-desktop{
         display: none;
@@ -97,7 +101,7 @@
         font-weight: 700;
         color: #3b3b3b;
     }
-    #tab-mobile > p > a > i{
+    #tab-mobile > p > a > i:nth-child(1){
         justify-content: center;
         display: flex;
         align-items: center;
@@ -109,6 +113,9 @@
         width: 3rem !important;
         height: 3rem;
     }
+    // #tab-mobile > p > a > i:nth-child(2){
+       
+    // }
     .collapse > div > div:nth-child(1) > img{
         width: 100%;
         height: 100%;
@@ -132,6 +139,15 @@
     }
     #package > div:nth-child(1) > div.container > div > div:nth-child(3) > div > div.container{
         margin-bottom: 1.5rem;
+    }
+    #app-download > div > div > div > div:nth-child(1) > div.text-intro{
+        text-align: center;
+    }
+    #app-download > div > div > div > div:nth-child(1) > hr{
+        display: none;
+    }
+    #app-download > div > div > div > div:nth-child(1) > p{
+        text-align: center !important;
     }
     #customer > .count-customer > img:nth-child(1){
         display: none;

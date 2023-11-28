@@ -51,7 +51,7 @@
                   </li>
                 </ul>
               </div>
-              <form class="d-flex">
+              <form class="d-hide">
                 <button class="btn btn-signin" type="submit">Đăng ký</button>
                 <div class="box" style="width: 20px;"></div>
                 <button class="btn btn-login" type="submit">Đăng nhập</button>
@@ -162,7 +162,7 @@
 
     <section id="swiper-slide-vsalon" class="benefit-section">
         <div class="container-fluid swiper-container">
-          <div class="container">
+          <div class="container animate">
             <div class="text-intro-benefit justify-content-center">Lợi ích khi sử dụng <span style="color: #3BB54A;">vSalon</span></div>
           <div class="text-slogan justify-content-center">Hãy để chúng tôi đồng hành cùng thành công của bạn</div>
             <div class="row justify-content-center">
@@ -408,6 +408,7 @@
         </div>
       </div>
       <div class="container-fluid justify-content-center" id="tab-mobile">
+        <div class="text-intro-benefit justify-content-center" style="margin-bottom: 1rem;">Hệ sinh thái <span style="color: #3BB54A;">vSalon</span></div>
         <p>
           <a class="btn btn-infomation" data-bs-toggle="collapse" href="#collapseInfo-chuoi" role="button" aria-expanded="false" aria-controls="collapseExample">  
                 <i class="fa-solid fa-scissors"></i>&nbsp Quản lý chuỗi Salon
@@ -568,7 +569,7 @@
     </section>
 
     <section id="package">
-      <div class="container-fluid">
+      <div class="container-fluid animate">
         <div class="text-intro-benefit justify-content-center">Bảng giá phần mềm quản lý <span style="color: #3BB54A;">Spa, salon vSalon</span></div>
         <div class="text-slogan justify-content-center">Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử miễn phí 30 ngày</div>
 
@@ -872,6 +873,33 @@
             prevEl: '.swiper-button-prev',
                 }
     });  
+    </script>
+    <script>
+      var sections = document.querySelectorAll('section');
+
+      window.addEventListener('scroll', function() {
+        // Kiểm tra mỗi section
+        sections.forEach(function(section) {
+          // Kiểm tra xem section có trong tầm nhìn hay không
+          if (isInViewport(section)) {
+            section.classList.add('show-animate');
+          } 
+          // else {
+          //   section.classList.remove('show-animate');
+          // }
+        });
+      });
+
+      // Hàm kiểm tra xem một phần tử có trong tầm nhìn hay không
+      function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
     </script>
 </body>
 </html>
